@@ -14,7 +14,7 @@ public class Get_Data {
 	public static String[][] getDataFromExcel(String sheetName) {
 		String[][] resultArray = null;
 		try {
-		FileInputStream ExcelFile = new FileInputStream("C:\\Users\\PRATYASHEECHANGMAI\\Desktop\\Rest API Project\\Datasheet.xls");
+		FileInputStream ExcelFile = new FileInputStream("src\\test\\java\\sdet19_suite\\Datasheet.xls");
 		HSSFWorkbook WBook = new HSSFWorkbook(ExcelFile);
 		HSSFSheet WSheet = WBook.getSheet(sheetName);
 		HSSFRow row;
